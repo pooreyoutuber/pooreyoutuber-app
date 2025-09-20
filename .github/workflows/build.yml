@@ -19,13 +19,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Make gradlew executable
-        run: chmod +x gradlew
+        run: chmod +x ./gradlew
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4   # 👈 यहाँ v4 ज़रूरी है (v3 deprecated है)
+        uses: actions/upload-artifact@v4
         with:
-          name: app-release
+          name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
