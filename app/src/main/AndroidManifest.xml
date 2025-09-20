@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // Open links inside app
         webView.setWebViewClient(new WebViewClient());
 
-        // Load your site
+        // Load your website
         webView.loadUrl("https://pooreyoutuber.github.io/");
     }
 
