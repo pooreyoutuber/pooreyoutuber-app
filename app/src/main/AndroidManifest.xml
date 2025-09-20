@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); // JavaScript enable
 
-        // 👉 यहाँ अपनी website का URL डालो
+        https://pooreyoutuber.github.io/
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://pooreyoutuber.github.io");
     }
